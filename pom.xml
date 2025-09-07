@@ -12,15 +12,11 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <!-- Encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <!-- Java version -->
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-
-        <!-- Maven WAR plugin version -->
-        <maven.war.plugin.version>3.3.3</maven.war.plugin.version>
+        <maven.war.plugin.version>3.2.3</maven.war.plugin.version>
+        <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
     </properties>
 
     <dependencies>
@@ -39,7 +35,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
+                <version>${maven.compiler.plugin.version}</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
